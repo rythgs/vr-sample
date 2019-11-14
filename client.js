@@ -14,15 +14,15 @@ function init(bundle, parent, options = {}) {
   r360.renderToSurface(
     r360.createRoot('VrSample', {
       photos: [
-        { url: './static_assets/sample1.jpg', format: '2D' },
-        { url: './static_assets/sample2.jpg', format: '2D' },
+        { url: r360.getAssetURL('sample1.jpg'), format: '2D' },
+        { url: r360.getAssetURL('sample2.jpg'), format: '2D' },
       ]
     }),
     r360.getDefaultSurface()
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('bg.jpg'));
+  // r360.compositor.setBackground(r360.getAssetURL('bg.jpg'));
 }
 
 window.React360 = {init};
