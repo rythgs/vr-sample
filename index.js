@@ -5,9 +5,7 @@ import {
   StyleSheet,
   Text,
   View,
-  VrButton,
-  Image,
-  asset
+  VrButton
 } from 'react-360'
 
 class Background extends React.Component {
